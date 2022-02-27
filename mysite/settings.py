@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-vss04)^wm)ge%7y7j@jdz4yv&na59tid8=xrtlvxgs1%oi1_$5'
+SECRET_KEY = 'django-insecure-vss04)^wm)ge%7y7j@jdz4yv&na59tid8=xrtlvxgs1%oi1_$5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
 
-SECRET_KEY = os.getenv('SECRET')
+# SECRET_KEY = os.getenv('SECRET')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 DATABASES = {
