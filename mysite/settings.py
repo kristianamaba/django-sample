@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
 
-SECRET_KEY = os.getenv('SECRET')
+SECRET_KEY = 'mfzmqss-wn(a44)*kq+^)9^+!r)yy8*$mp&_ps*%0@w@lb=$5f'
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 DATABASES = {
