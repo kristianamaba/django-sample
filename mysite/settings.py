@@ -120,30 +120,30 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-import os
+# import os
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-TIME_ZONE = 'Asia/Manila'
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# TIME_ZONE = 'Asia/Manila'
+# STATIC_URL = '/static/'
+# STATIC_ROOT = BASE_DIR / 'static'
 
 
-SECRET_KEY = 'mfzmqss-wn(a44)*kq+^)9^+!r)yy8*$mp&_ps*%0@w@lb=$5f'
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+# SECRET_KEY = os.getenv('SECRET')
+# ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog'
-]
+# INSTALLED_APPS = [
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+#     'blog'
+# ]
