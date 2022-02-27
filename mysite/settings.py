@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-vss04)^wm)ge%7y7j@jdz4yv&na59tid8=xrtlvxgs1%oi1_$5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+TIME_ZONE = 'Asia/Manila'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static'
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -105,8 +109,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
-
 USE_I18N = True
 
 USE_TZ = True
@@ -115,21 +117,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 # import os
 
-# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# TIME_ZONE = 'Asia/Manila'
-# STATIC_URL = '/static/'
-# STATIC_ROOT = BASE_DIR / 'static'
 
 
 # SECRET_KEY = os.getenv('SECRET')
-# ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+
 
 # DATABASES = {
 #     'default': {
